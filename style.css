@@ -1,0 +1,89 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+ .fill-screen {
+    background-position: center;
+    background-size: cover;
+}  
+
+.container-fluid h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 10;
+    font-family: 'Cabin', sans-serif;
+    color: rgb(19, 18, 18);
+    text-align: center; 
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate;
+
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6be74, 0 0 40px #e6be74, 0 0 50px #e6be74, 0 0 60px #e6be74, 0 0 70px #e6be74;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f1c669, 0 0 40px #d89607, 0 0 50px #d89607, 0 0 60px #d89607, 0 0 70px #d89607, 0 0 80px #d89607;
+    }
+  }
+   
+ p {
+    font-size: 25px;
+    font-weight: 10;
+    color: rgb(224, 181, 115);
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.fill-screen div {
+    left: 356px;
+}
+
+@media (max-width:650px) {
+    .fill-screen {
+        width: 100%;
+    }
+
+    .fill-screen div {
+        display: none;
+    }
+} 
+
+#clockdiv{
+    font-family: sans-serif;
+    color: rgb(233, 202, 157);
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(165, 113, 44);
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(7, 7, 7);
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+}
+
